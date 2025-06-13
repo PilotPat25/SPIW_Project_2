@@ -41,7 +41,7 @@ def read_parameters(stringdata):
             data_json = stringdata.split('{',1)[1]
             data_json = '{' + data_json
             data_json = json.loads(data_json)
-            print(data_json)
+            #print(data_json)
             AMFS0 = data_json.get("AMFS0", AMFS0)
             CPU0 = data_json.get("CPU0", CPU0)
             CPU0LOAD = data_json.get("CPU0LOAD", CPU0LOAD)
@@ -217,7 +217,7 @@ def main_function():
             amf_sessions = 0
 
         queryCPU=('http://192.168.1.210:9090/api/v1/query?query=100 - (avg by (cpu) (irate(node_cpu_seconds_total{instance="spiw2",mode="idle"}[5m])) * 100)')
-        print(f"\n query: {queryCPU}")
+        print(f"\n query: {queryCPU}\n")
 
         try:
             requestQueryCPU = requests.get(queryCPU)
