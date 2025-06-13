@@ -1,0 +1,14 @@
+{
+  "AMFS0": 0,
+  "CPU0": "150m",
+  "CPU0LOAD": 5,
+  "AMFS1": 4,
+  "CPU1": "200m",
+  "CPU1LOAD": 10,
+  "AMFS2": 8,
+  "CPU2": "250m",
+  "CPU2LOAD": 15,
+  "AMFS3": 12,
+  "CPU3": "300m",
+  "CPU3LOAD": 20
+}
